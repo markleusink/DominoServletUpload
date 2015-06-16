@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="1.3" replicaid="C1257E66006C38C5" version="9.0" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="162" sequence="2" unid="763EDF3EFF45A85EC1257E66006C821A">
+<created><datetime dst="true">20150616T214511,94+02</datetime></created>
+<modified><datetime dst="true">20150616T214512,66+02</datetime></modified>
+<revised><datetime dst="true">20150616T214512,64+02</datetime></revised>
+<lastaccessed><datetime dst="true">20150616T214512,64+02</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20150616T214511,94+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<item name="$Flags"><text>34567Cg~[</text></item>
+<item name="$TITLE"><text>frostillicus/xsp/servlet/AbstractXSPServlet.java</text></item>
+
+
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>frostillicus/xsp/servlet/AbstractXSPServlet.java</text></item></note>

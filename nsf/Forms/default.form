@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<form name='default' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.3'
+ replicaid='C1257E66006C38C5' publicaccess='false' designerversion='8.5.3'
+ default='true' renderpassthrough='true'>
+<noteinfo noteid='19e' unid='1061A12A7E5404DCC1257E66006FCA90' sequence='4'>
+<created><datetime dst='true'>20150616T222103,52+02</datetime></created>
+<modified><datetime dst='true'>20150616T222655,87+02</datetime></modified>
+<revised><datetime dst='true'>20150616T222655,85+02</datetime></revised>
+<lastaccessed><datetime dst='true'>20150616T222655,85+02</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20150616T222103,70+02</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Mark Leusink/O=LinQed</name></updatedby>
+<wassignedby><name>CN=Mark Leusink/O=LinQed</name></wassignedby>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'/>
+<par def='1'>Form data:</par>
+<par def='1'/>
+<par def='1'><computedtext><code event='value'><formula>temp := "";
+fields := @DocFields;
+
+@For(n := 1; n &lt;= @Elements(fields); n := n + 1;
+temp := temp + " -" + fields[n] );
+
+temp</formula></code></computedtext></par></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>default</text></item></form>
+

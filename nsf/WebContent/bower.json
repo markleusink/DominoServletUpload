@@ -1,0 +1,22 @@
+{
+  "name": "WebContent",
+  "version": "0.0.0",
+  "authors": [
+    "Mark Leusink <m.leusink@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "resolutions": {
+    "angular": "~1.4.1"
+  },
+  "dependencies": {
+    "angular": "~1.4.1",
+    "angular-file-upload": "~1.1.5"
+  }
+}
