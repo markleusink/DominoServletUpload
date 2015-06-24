@@ -3,6 +3,7 @@
 
     <head>
         <title>Domino Upload Servlet</title>
+        
         <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -10,7 +11,7 @@
 
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-file-upload/angular-file-upload.min.js"></script>
-        <script src="controllers.js"></script>
+        <script src="angular.js"></script>
 
         <style>
             .my-drop-zone { border: dotted 3px lightgray; }
@@ -24,31 +25,19 @@
     <!-- 1. nv-file-drop="" uploader="{Object}" options="{Object}" filters="{String}" -->
     <body ng-controller="AppController" nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter">
 
-        <div class="container">
+	        <div class="container">
+        
+             <div class="navbar navbar-default">
+<div class="navbar-header"><a class="navbar-brand"
+	href="https://github.com/nervgh/angular-file-upload">Domino Upload
+Servlet</a></div>
 
-            <div class="navbar navbar-default">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="https://github.com/nervgh/angular-file-upload">Angular File Upload</a>
-                </div>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li class="active dropdown"><!--
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Demos <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li class="active"><a href="#">Simple example</a></li>
-                                <li><a href="../image-preview">Uploads only images (with canvas preview)</a></li>
-                                <li><a href="../without-bootstrap">Without bootstrap example</a></li>
-                            </ul>
-                        --></li>
-                    </ul>
-                </div>
-            </div>
+     </div>
             
             <div class="row">
 
                 <div class="col-md-12">
-                	Form data here:
-                	<label class="control-label">your name:</label>
+                	<label class="control-label">Your name:</label>
                 	<input ng-model="name" class="form-control" />
                 </div>
                 

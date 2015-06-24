@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view
+	xmlns:xp="http://www.ibm.com/xsp/core">
+
+	<xp:this.resources>
+		<xp:styleSheet
+			href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"></xp:styleSheet>
+	</xp:this.resources>
+
+
+	<div
+		class="container">
+
+		<div
+			class="navbar navbar-default">
+			<div
+				class="navbar-header">
+				<a
+					class="navbar-brand"
+					href="https://github.com/nervgh/angular-file-upload">Domino Upload
+					Servlet</a>
+			</div>
+		</div>
+
+
+		<xp:link
+			escape="true"
+			styleClass="btn btn-primary"
+			text="Single upload"
+			id="link1"
+			value="/single.html">
+		</xp:link>
+		&#160;
+
+		<xp:link
+			escape="true"
+			text="Multiple upload (single request)"
+			styleClass="btn btn-success"
+			id="link2"
+			value="/multiple.html">
+		</xp:link>
+		&#160;
+
+
+
+		<xp:link
+			escape="true"
+			text="Upload using an Angular plugin"
+			styleClass="btn btn-warning"
+			id="link3"
+			value="/angular.html">
+		</xp:link>
+
+
+		<div
+			style="padding:20px">
+
+			<xp:viewPanel
+				rows="100"
+				id="viewPanel1"
+				viewStyleClass="table table-striped">
+
+				<xp:this.data>
+					<xp:dominoView
+						var="view1"
+						viewName="default">
+					</xp:dominoView>
+				</xp:this.data>
+				<xp:viewColumn
+					columnName="$0"
+					id="viewColumn1">
+					<xp:this.converter>
+						<xp:convertDateTime
+							type="both"></xp:convertDateTime>
+					</xp:this.converter>
+					<xp:viewColumnHeader
+						value="created"
+						id="viewColumnHeader1">
+					</xp:viewColumnHeader>
+				</xp:viewColumn>
+				<xp:viewColumn
+					columnName="$1"
+					id="viewColumn2">
+					<xp:this.converter>
+						<xp:convertNumber
+							type="number"
+							integerOnly="true">
+						</xp:convertNumber>
+					</xp:this.converter>
+					<xp:viewColumnHeader
+						value="#"
+						id="viewColumnHeader2">
+					</xp:viewColumnHeader>
+				</xp:viewColumn>
+
+				<xp:viewColumn
+					columnName="$4"
+					id="viewColumn4">
+
+					<xp:viewColumnHeader
+						value="attachments"
+						id="viewColumnHeader4">
+					</xp:viewColumnHeader>
+				</xp:viewColumn>
+
+			</xp:viewPanel>
+
+
+		</div>
+
+	</div>
+
+
+</xp:view>

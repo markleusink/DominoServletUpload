@@ -9,7 +9,8 @@ angular
 
     .controller('AppController', ['$scope', 'FileUploader', function($scope, FileUploader) {
         var uploader = $scope.uploader = new FileUploader({
-            url: 'xsp/upload'
+            url: 'xsp/upload',
+            formData : []
         });
 
         // FILTERS
@@ -34,6 +35,10 @@ angular
         };
         uploader.onBeforeUploadItem = function(item) {
             console.info('onBeforeUploadItem', item);
+            
+            //adding some form data
+            item.formData.push( { "name" : $scope.name } );
+            
         };
         uploader.onProgressItem = function(fileItem, progress) {
             console.info('onProgressItem', fileItem, progress);
